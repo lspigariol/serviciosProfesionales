@@ -65,7 +65,7 @@ Una empresa que contrate a estos cuatro profesionales, y cuyos honorarios de ref
 Esta empresa es de gente acotada. Pero si le agregamos a Luciana dos provincias más (p.ej. Corrientes y Misiones)
 
 Hacer los tests que sean necesarios para verificar esto.  
-Se puede usar (si sabés cómo es, no te pongas a averiguar ahora) un `fixture` para definir información que se usa en varios tests dentro de un _describe file_.
+Se puede definir un ḿetodo `initialize()` (si sabés cómo es, no te pongas a averiguar ahora) para definir información que se usa en varios tests dentro de un `describe`.
 
 <br>
 
@@ -108,7 +108,6 @@ laMejor.darServicio(mirna)
 se indica que se le está dando a Mirna un servicio. Se asume que cada servicio insume una hora de tiempo de un profesional.
 Debe pasar lo siguiente:
 - si el solicitante puede ser atendido (etapa 3), entonces elegir uno cualquiera de los profesionales que puede atenderlo, hacer que ese profesional cobre (etapa 2) su honorario por hora (etapa 1), y agregar al solicitante al conjunto de _clientes_ de la empresa.
-- caso contrario, lanzar un error.
   
 Agregar la posibilidad de preguntarle a una empresa de servicios: cuántos clientes tiene, y si tiene o no como cliente a un determinado solicitante. 
 
